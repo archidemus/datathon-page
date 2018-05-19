@@ -12,8 +12,7 @@ var treemap = d3.treemap()
     .round(true)
     .paddingInner(1);
 
-d3.json('https://bl.ocks.org/mbostock/raw/4063582/9d958e6f6071f76b41b7528fbc264f5ea7dfc706/flare.json', function(error, data) {
-    window.alert("Llego");
+d3.json('https://raw.githubusercontent.com/archidemus/datathon-page/master/data/treemapData.json', function(error, data) {
   if (error) throw error;
 
   var root = d3.hierarchy(data)
