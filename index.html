@@ -39,26 +39,21 @@
     <![endif]-->
 
     <style>
-
         form {
           font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         }
-        
         svg {
           font: 10px sans-serif;
         }
-        
     </style>
 </head>
 
 <body>
-
     <div id="wrapper">
-
         <div class="container">
-
+            
+            <!-- title -->
             <section id="top" class="section docs-heading">
-
                 <div class="row">
                     <div class="col-md-12">
                         <div class="big-title text-center">
@@ -66,24 +61,19 @@
                                 visible para el público</h1>
                             <p class="lead">Reporte Final</p>
                         </div>
-                        <!-- end title -->
                     </div>
-                    <!-- end 12 -->
                 </div>
-                <!-- end row -->
-
                 <hr>
-
             </section>
-            <!-- end section -->
+            <!-- endtitle -->
 
             <div class="row">
-
+                <!-- menu -->
                 <div class="col-md-3">
                     <nav class="docs-sidebar" data-spy="affix" data-offset-top="300" data-offset-bottom="200" role="navigation">
                         <ul class="nav">
-                            <li><a href="#line1">Reporte 1</a></li>
-                            <li><a href="#line6">Reporte 2</a></li>
+                            <li><a href="#reporte1">Reporte 1</a></li>
+                            <li><a href="#reporte2">Reporte 2</a></li>
                             <li><a href="#line7">Reporte 3</a>
                                 <ul class="nav">
                                     <li><a href="#line7_1">SubReporte</a></li>
@@ -98,73 +88,81 @@
                         </ul>
                     </nav >
                 </div>
-                <div class="col-md-9">
-                    <section class="welcome">
+                <!-- endmenu -->
 
+                <!-- content -->
+                <div class="col-md-9">
+
+                    <!-- introduccion -->
+                    <section class="welcome">
                         <div class="row">
                             <div class="col-md-12 left-align">
                                 <h2 class="dark-text">Introducción<hr></h2>
                                 <div class="row">
-
                                     <div class="col-md-12 full">
-                                        
-
                                         <hr>
                                         <div>
                                             <h4>Cosas de introducción</h4>
                                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi incidunt cumque inventore consectetur voluptatibus nam. Placeat expedita itaque in fugit quidem excepturi consectetur. Nobis, repellat pariatur iusto quis dolores optio.</p>
-                                
                                         </div>
                                     </div>
-
                                 </div>
-                                <!-- end row -->
                             </div>
                         </div>
                     </section>
+                    <!-- endintroduccion -->
 
-                    <section id="line1" class="section">
-
+                    <!-- reporte1 -->
+                    <section class="section">
                         <div class="row">
                             <div class="col-md-12 left-align">
-                                <h2 class="dark-text">Reporte 1 <a href="#top">#back to top</a><hr></h2>
+                                <h2 id="reporte1" class="dark-text">Reporte 1 <a href="#top">#back to top</a><hr></h2>
                             </div>
-                            <!-- end col -->
                         </div>
-                        <!-- end row -->
-
                         <div class="row">
                             <div class="col-md-12">
                                 <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-
                                 <h4>Visualización</h4>
-
-                                <svg width="960" height="570"></svg>
-                                
+                                <svg id="g1reporte1" width="800" height="570"></svg>
                                 <form>
                                   <label><input type="radio" name="mode" value="sumBySize" checked> Size</label>
                                   <label><input type="radio" name="mode" value="sumByCount"> Count</label>
                                 </form>
-                                
                             </div>
-                            <!-- end col -->
                         </div>
-                        <!-- end row -->
-
                     </section>
-                    <!-- end section -->
+                    <!-- endreporte1 -->
 
-                    
+                    <!-- reporte2 -->
+                    <section class="section">
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 id="reporte2" class="dark-text">Reporte 2 <a href="#top">#back to top</a><hr></h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                                <h4>Visualización</h4>
+                                <svg id="g1reporte2" width="800" height="570"></svg>
+                                <form>
+                                  <label><input type="radio" name="mode" value="sumBySize" checked> Size</label>
+                                  <label><input type="radio" name="mode" value="sumByCount"> Count</label>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- endreporte2 -->
+
 
                     <section id="line6" class="section">
-
                         <div class="row">
                             <div class="col-md-12 left-align">
                                 <h2 class="dark-text">Reporte 2<a href="#top">#back to top</a><hr></h2>
                             </div>
-                            <!-- end col -->
+                            
                         </div>
-                        <!-- end row -->
+                        
 
                         <div class="row">
 
@@ -181,7 +179,7 @@
                                     <li><strong>Step 3</strong> - Lorem the It is a long established fact that a read.</li>
                                 </ul>
                             </div>
-                            <!-- end col -->
+                            
 
                             <div class="col-md-6">
                                 <a href="upload/thumbnail.png" data-rel="prettyPhoto"><img src="images/upload/thumbnail.png" alt="" class="img-responsive img-thumbnail"></a>
@@ -193,13 +191,13 @@
                                     <li><strong>Step 3</strong> - Lorem the It is a long established fact that a read.</li>
                                 </ul>
                             </div>
-                            <!-- end col -->
+                            
 
                         </div>
-                        <!-- end row -->
+                        
 
                     </section>
-                    <!-- end section -->
+                    
 
                     <section id="line7" class="section">
 
@@ -207,9 +205,9 @@
                             <div class="col-md-12 left-align">
                                 <h2 class="dark-text">Reporte 3 <a href="#top">#back to top</a><hr></h2>
                             </div>
-                            <!-- end col -->
+                            
                         </div>
-                        <!-- end row -->
+                        
 
                         <div class="row">
                             <div class="col-md-4">
@@ -220,9 +218,9 @@
                                 <h4 id="line7_1">General Options - <a href="#top">#back to top</a></h4>
                                 <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. long established fact that a reader will English.</p>
                             </div>
-                            <!-- end col -->
+                            
                         </div>
-                        <!-- end row -->
+                        
 
                         <hr>
 
@@ -235,9 +233,9 @@
                                 <h4 id="line7_2">Style Options - <a href="#top">#back to top</a></h4>
                                 <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. long established fact that a reader will English.</p>
                             </div>
-                            <!-- end col -->
+                            
                         </div>
-                        <!-- end row -->
+                        
 
                         <hr>
 
@@ -250,9 +248,9 @@
                                 <h4 id="line7_3">Header Options - <a href="#top">#back to top</a></h4>
                                 <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. long established fact that a reader will English.</p>
                             </div>
-                            <!-- end col -->
+                            
                         </div>
-                        <!-- end row -->
+                        
 
                         <hr>
 
@@ -265,9 +263,9 @@
                                 <h4 id="line7_4">Font Options - <a href="#top">#back to top</a></h4>
                                 <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. long established fact that a reader will English.</p>
                             </div>
-                            <!-- end col -->
+                            
                         </div>
-                        <!-- end row -->
+                        
 
                         <hr>
 
@@ -280,9 +278,9 @@
                                 <h4 id="line7_5">Slider Options - <a href="#top">#back to top</a></h4>
                                 <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. long established fact that a reader will English.</p>
                             </div>
-                            <!-- end col -->
+                            
                         </div>
-                        <!-- end row -->
+                        
 
                         <hr>
 
@@ -295,9 +293,9 @@
                                 <h4 id="line7_6">Page Options - <a href="#top">#back to top</a></h4>
                                 <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. long established fact that a reader will English.</p>
                             </div>
-                            <!-- end col -->
+                            
                         </div>
-                        <!-- end row -->
+                        
 
                         <hr>
 
@@ -310,24 +308,12 @@
                                 <h4 id="line7_7">Import & Export Options - <a href="#top">#back to top</a></h4>
                                 <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. long established fact that a reader will English.</p>
                             </div>
-                            <!-- end col -->
                         </div>
-                        <!-- end row -->
-
                     </section>
-                    <!-- end section -->
-
                 </div>
-                <!-- // end .col -->
-
             </div>
-            <!-- // end .row -->
-
         </div>
-        <!-- // end container -->
-
     </div>
-    <!-- end wrapper -->
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -347,7 +333,7 @@
 
     <!-- DATA LIBRARY -->
     <script src="https://d3js.org/d3.v4.min.js"></script>
-    <script src="js/treemapConfig.js"></script>
+    <script src="js/treemapReporte1.js"></script>
 
 
 </body>

@@ -1,4 +1,4 @@
-var svg = d3.select("svg"),
+var svg = d3.select("#g1reporte1"),
     width = +svg.attr("width"),
     height = +svg.attr("height");
 
@@ -12,7 +12,7 @@ var treemap = d3.treemap()
     .round(true)
     .paddingInner(1);
 
-d3.json('http://archidemus.me/datathon-page/data/treemapData.json', function(error, data) {
+d3.json('http://archidemus.me/datathon-page/data/treemapReporte1.json', function(error, data) {
   if (error) throw error;
 
   var root = d3.hierarchy(data)
