@@ -1,3 +1,13 @@
+var fillPattern;
+
+img.src = 'https://canvasjs.com/wp-content/uploads/images/gallery/php-charts/overview/php-charts-graphs-index-data-label.png';
+img.onload = function() {
+    var ctx = document.getElementById('canvas').getContext('2d');
+    fillPattern = ctx.createPattern(img, 'repeat');
+}
+
+Chart.defaults.global.defaultColor = fillPattern;
+
 var g1report1 = new Chart(document.getElementById("r1sr1g1"), {
     type: 'horizontalBar',
     data: {
@@ -91,6 +101,9 @@ var g1report2 = new Chart(document.getElementById("r2sr1g2"), {
         datasets: [{
           label: "Car Speed",
           data: [0, 59, 75, 20, 20, 55, 40],
+          backgroundColor: [
+            'rgba(255, 99, 132, 0.2)',
+            'rgba(54, 162, 235, 0.2)']
         }]
       },
     options: {
@@ -111,10 +124,6 @@ var g1report2 = new Chart(document.getElementById("r2sr1g2"), {
 });
 
 var r1sr1g1 = JSON.parse("{\"columns\":[\"Periodo\",\"Presupuesto pedido\",\"Presupuesto ejecutado\"],\"index\":[0,1,2,3,4,5,6,7,8],\"data\":[[2009,123189018,141108425],[2010,130309463,143316533],[2011,143281566,165177054],[2012,146478999,161595887],[2013,163662078,169430529],[2014,156587104,172207204],[2015,169383424,186038470],[2016,180388507,215517098],[2017,190112157,203394916]]}");
-console.log(r1sr1g1);
-console.log(r1sr1g1.data.map(function(item){return item[0];}));
-console.log(r1sr1g1.data.columns)
-
 new Chart(document.getElementById("r1sr2g1"), {
     type: 'line',
     data: {

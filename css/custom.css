@@ -199,3 +199,12 @@
 .syntaxhighlighter .js.keyword {
     color: #b48ead !important;
 }
+
+.section {
+    padding-top: 0px;
+    padding-bottom: 160px;
+}
+
+section{
+    padding-bottom: 160px;
+}
