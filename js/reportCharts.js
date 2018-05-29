@@ -110,5 +110,36 @@ var g1report2 = new Chart(document.getElementById("r2sr1g2"), {
       }
 });
 
-var r1sr1g1 = JSON.parse("../data/r1sr2g1.json");
+var r1sr1g1 = JSON.parse("{\"columns\":[\"Periodo\",\"Presupuesto pedido\",\"Presupuesto ejecutado\"],\"index\":[0,1,2,3,4,5,6,7,8],\"data\":[[2009,123189018,141108425],[2010,130309463,143316533],[2011,143281566,165177054],[2012,146478999,161595887],[2013,163662078,169430529],[2014,156587104,172207204],[2015,169383424,186038470],[2016,180388507,215517098],[2017,190112157,203394916]]}");
 console.log(r1sr1g1);
+console.log(r1sr1g1.data.map(function(item){return item[0];}));
+console.log(r1sr1g1.data.columns)
+
+new Chart(document.getElementById("r1sr2g1"), {
+    type: 'line',
+    data: {
+        labels: r1sr1g1.data.map(function(item){return item[0];}),
+        datasets: [{
+          label: r1sr1g1.columns[1],
+          data: r1sr1g1.data.map(function(item){return item[1];}),
+        },{
+          label: r1sr1g1.columns[2],
+          data: r1sr1g1.data.map(function(item){return item[2];}),
+        }]
+      },
+    options: {
+        legend: {
+          display: true,
+          position: 'top',
+          labels: {
+            boxWidth: 80,
+            fontColor: 'black'
+          }
+        },
+        elements: {
+            line: {
+                tension: 0, // disables bezier curves
+            }
+        }
+      }
+});
